@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ProgramaYa! | La web más popular para aprender programación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desbloquea tu potencial con nuestros cursos de programación y haz realidad tus sueños digitales. ¡Empieza hoy mismo!" />
+  <meta name="keywords" content="programmer web html css js react code coding programming" />
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" href="src/img/favicon.webp" type="image/x-icon" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="nav__logo" href="#">
+        PROGRAMA<strong class="logo--bold">YA!</strong>
+      </a>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">Sobre nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#popular">Populares</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#testaments">Testimonios</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#questions">Preguntas</a>
+          </li>
+        </ul>
+        <div class="nav__close">
+          <i class='bx bx-x'></i>
+        </div>
+      </div>
+      <div class="nav__toggle">
+        <i class='bx bx-menu' ></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="home__container">
+        <h1 class="home__title">
+          ¡Hola! <br> Bienvenido a Programa<span class="logo--bold">Ya!</span>
+        </h1>
+        <p class="home__desc">
+          Desbloquea tu potencial con nuestros cursos de programación y haz realidad tus sueños digitales. ¡Empieza hoy mismo!
+        </p>
+        <p class="desc--two">
+          Bienvenido a tu destino número uno para aprender programación de forma fácil y divertida. Aquí en ProgramaYa, nos apasiona proporcionarte las herramientas y los recursos que necesitas para convertirte en un experto en programación, independientemente de tu nivel de experiencia. ¡Prepárate para desbloquear tu potencial y dar el siguiente paso en tu viaje hacia el dominio tecnológico!
+        </p>
+        <div class="home__buttons">
+          <button>Inscríbete ahora</button>
+          <button>Explora nuestros cursos</button>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="about__title title">¿Quienes somos?</h2>
+      <p class="about__desc">
+        Bienvenido a ProgramaYa, tu destino definitivo para la formación en programación. Nos dedicamos a proporcionar cursos de alta calidad diseñados para capacitar a individuos de todos los niveles en el emocionante mundo de la programación.
+        <hr>
+        En ProgramaYa, creemos en el poder transformador de la educación. Desde nuestros modestos comienzos, hemos estado comprometidos con la misión de hacer que el aprendizaje de la programación sea accesible para todos, sin importar su experiencia previa. Nuestro equipo está formado por apasionados expertos en programación que comparten una visión común: capacitar a nuestros estudiantes para que alcancen sus metas profesionales y personales a través del dominio de las habilidades tecnológicas más demandadas.
+        <hr>
+        Lo que nos distingue es nuestro enfoque centrado en el estudiante. Entendemos que cada persona tiene su propio ritmo de aprendizaje y objetivos únicos, por lo que ofrecemos una amplia gama de cursos flexibles que se adaptan a tus necesidades específicas. Ya sea que estés dando tus primeros pasos en el mundo de la programación o busques perfeccionar tus habilidades en un área especializada, tenemos el curso perfecto para ti.
+        <hr>
+        En ProgramaYa, no solo te ofrecemos conocimientos técnicos, sino también un ambiente de aprendizaje colaborativo y de apoyo. Nuestra comunidad está compuesta por estudiantes motivados, instructores experimentados y mentores dedicados que están aquí para ayudarte en cada paso del camino.
+        <hr>
+        Únete a nosotros y descubre el potencial ilimitado que la programación tiene para ofrecer. Estamos emocionados de embarcarnos en este viaje contigo y ayudarte a convertir tus sueños en realidad.
+        <hr>
+        ¡Comienza tu viaje de aprendizaje con ProgramaYa hoy mismo!
+      </p>
+      <div class="about__socials">
+        <div class="about__icon">
+          <i class='bx bxl-youtube' ></i>
+        </div>
+        <div class="about__icon">
+          <i class='bx bxl-twitch' ></i>
+        </div>
+        <div class="about__icon">
+          <i class='bx bxl-twitter' ></i>
+        </div>
+        <div class="about__icon">
+          <i class='bx bxl-instagram-alt' ></i>
+        </div>
+      </div>
+    </section>
+    <!-- POPULAR -->
+    <section id="popular">
+      <h2 class="popular__title title">Cursos Populares</h2>
+      <div class="popular__container">
+        <div class="popular__card">
+          <figure class="popular__img">
+            <img src="src/img/frontend.webp" alt="imagen de curso frontend" loading="lazy" >
+          </figure>
+          <div class="popular__data">
+            <h3 class="data--title">Frontend</h3>
+            <p class="data--desc">
+              Conviértete en un experto en el desarrollo frontend y domina las tecnologías fundamentales que impulsan la interactividad y el diseño de las aplicaciones web modernas. Aprende a utilizar HTML, CSS y JavaScript para crear interfaces de usuario atractivas y funcionales que cautiven a tus usuarios desde el primer clic
+            </p>
+            <button>Inscribirse ahora</button>
+          </div>
+        </div>
+        <div class="popular__card card--desktop">
+          <figure class="popular__img">
+            <img src="src/img/fullstack.webp" alt="imagen de curso fullstack" loading="lazy" >
+          </figure>
+          <div class="popular__data">
+            <h3 class="data--title">FullStack</h3>
+            <p class="data--desc">
+              Sumérgete en el emocionante mundo del desarrollo Full Stack y aprende a construir aplicaciones web completas desde cero. Desde el frontend con HTML, CSS y JavaScript hasta el backend con Node.js y bases de datos, este curso te proporcionará las habilidades necesarias para crear soluciones web dinámicas y escalables.
+            </p>
+            <button>Inscribirse ahora</button>
+          </div>
+        </div>
+        <div class="popular__card">
+          <figure class="popular__img">
+            <img src="src/img/backend.webp" alt="imagen de curso backend" loading="lazy" >
+          </figure>
+          <div class="popular__data">
+            <h3 class="data--title">Backend</h3>
+            <p class="data--desc">
+              Descubre el poder del desarrollo backend y aprende a construir el motor que impulsa las aplicaciones web. Desde la gestión de servidores hasta el manejo de datos y la creación de API, este curso te proporcionará las habilidades necesarias para crear sistemas robustos y eficientes que gestionen el flujo de información detrás de escena
+            </p>
+            <button>Inscribirse ahora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTAMENTS -->
+    <section id="testaments">
+      <h2 class="testaments__title title">Testimonios</h2>
+      <div class="testaments__container">
+        <div class="testaments__card">
+          <div class="testaments__div">
+            <img class="testaments__img" src="src/img/testimonio-1.webp" alt="foto persona primer testimonio" loading="lazy" >
+            <div class="testaments__info">
+              <span>Nataly Washington</span>
+              <strong>Londres, Inglaterra</strong>
+            </div>
+          </div>
+          <p class="card--desc">
+            "Gracias a los cursos de programación de esta plataforma, finalmente pude dar el salto hacia una carrera en desarrollo web. Los instructores son increíblemente hábiles y las lecciones están diseñadas de manera clara y concisa. ¡Recomendaría estos cursos a cualquier persona interesada en aprender a programar!"
+          </p>
+        </div>
+        <div class="testaments__card">
+          <div class="testaments__div">
+            <img class="testaments__img" src="src/img/testimonio-2.webp" alt="foto persona segundo testimonio" loading="lazy" >
+            <div class="testaments__info">
+              <span>Luis Enrique</span>
+              <strong>Bógota, Colombia</strong>
+            </div>
+          </div>
+          <p class="card--desc">
+            "Después de probar varios recursos para aprender programación, me encontré con estos cursos y ¡fue un cambio de juego! La combinación de lecciones teóricas y prácticas me permitió adquirir habilidades de programación de manera rápida y efectiva. Ahora me siento mucho más seguro trabajando en mis proyectos."
+          </p>
+        </div>
+        <div class="testaments__card">
+          <div class="testaments__div">
+            <img class="testaments__img" src="src/img/testimonio-3.webp" alt="foto persona tercer testimonio" loading="lazy" >
+            <div class="testaments__info">
+              <span>Charlotte Jessica</span>
+              <strong>Cincinatti, Estados Unidos</strong>
+            </div>
+          </div>
+          <p class="card--desc">
+            "Estoy impresionada por la calidad de los cursos de programación ofrecidos aquí. Los materiales de estudio son excelentes, y el apoyo de la comunidad es invaluable. Lo mejor de todo es que he logrado conseguir un trabajo como desarrolladora junior gracias a las habilidades que he adquirido aquí. ¡Muchas gracias!"
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- QUESTIONS -->
+    <section id="questions">
+      <h2 class="questions__title title">Preguntas Frecuentes</h2>
+      <div class="questions__container">
+        <div class="questions__card">
+          <details class="questions__data">
+            <summary class="questions__data--title">
+              ¿Cuáles son los requisitos para inscribirme en un curso?
+              <i class='bx bxs-down-arrow'></i>
+            </summary>
+            <div class="questions__data--desc">
+              <p>Para inscribirte en nuestros cursos, no se requieren conocimientos previos en programación. Nuestros cursos están diseñados para adaptarse a diferentes niveles de habilidad, desde principiantes hasta usuarios avanzados. ¡Solo necesitas estar entusiasmado por aprender y tener acceso a una computadora con conexión a internet!</p>
+            </div>
+          </details>
+        </div>
+        <div class="questions__card">
+          <details class="questions__data">
+            <summary class="questions__data--title">
+              ¿Cómo accedo al contenido del curso una vez que me inscribo?
+              <i class='bx bxs-down-arrow'></i>
+            </summary>
+            <div class="questions__data--desc">
+              <p>Una vez que te hayas inscrito en un curso, recibirás acceso instantáneo al contenido a través de nuestra plataforma en línea. Simplemente inicia sesión en tu cuenta y podrás acceder a todas las lecciones, materiales de estudio y recursos adicionales que necesitas para completar el curso.</p>
+            </div>
+          </details>
+        </div>
+        <div class="questions__card">
+          <details class="questions__data">
+            <summary class="questions__data--title">
+              ¿Ofrecen soporte durante el curso si tengo preguntas o dificultades?
+              <i class='bx bxs-down-arrow'></i>
+            </summary>
+            <div class="questions__data--desc">
+              <p>¡Absolutamente! Nuestro equipo de soporte está aquí para ayudarte en cada paso del camino. Si tienes alguna pregunta sobre el contenido del curso, encuentras dificultades técnicas o necesitas orientación adicional, puedes contactarnos en cualquier momento a través de nuestro sistema de soporte en línea. Estamos comprometidos a garantizar tu éxito en el aprendizaje de programación.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer__container">
+        <div class="footer__data">
+            <a href="https://flowbite.com/" class="footer__logo">
+                <img src="src/img/favicon.webp" class="logo--img" alt="logo del pie de pagina" loading="lazy"/>
+                <span class="logo--text">PROGRAMA<span class="logo--bold">YA!</spanc></span>
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <span class="footer__copy">
+          © 2024 <a href="#">BrrraianDev™</a>. Todos los derechos reservados.
+        </span>
+    </div>
+  </footer>
+  <script defer src="src/js/main.js"></script>
+</body>
+</html>
+
