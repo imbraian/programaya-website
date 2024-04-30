@@ -15,7 +15,7 @@ html {
 body {
   min-height: 100vh;
   font-family: "Lato", sans-serif;
-  background: #202020;
+  background: #132d46;
   color: #fff;
 }
 
@@ -25,12 +25,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
-  padding: 15px;
-  backdrop-filter: blur(5px);
+  background-color: #132d46;
 }
 
 section {
-  max-width: 1440px;
+  max-width: 1240px;
   padding-block: 6rem;
   padding-inline: 10px;
   text-align: center;
@@ -38,7 +37,7 @@ section {
 }
 
 h2 {
-  color: #d83d00;
+  color: #fff;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
@@ -50,25 +49,24 @@ img {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 55px 55px 0px 0;
+  border-radius: 20px 20px 0 0;
 }
 
 button {
   padding: 15px;
-  border: 1px solid #d83d00;
   outline: none;
   border-radius: 30px;
   cursor: pointer;
   font-size: 0.9rem;
-  font-weight: 500;
-  background: #d83d0060;
+  font-weight: 300;
+  transition: 0.4s;
+  background-color: #01c36d;
   color: #fff;
-  transition: 0.3s;
+  border: none;
 }
 
 button:hover {
-  background-color: #d83d00;
-  border: 1px solid #fff;
+  background: #191e29;
 }
 
 .nav {
@@ -78,12 +76,46 @@ button:hover {
   position: relative;
   height: 3.5rem;
   max-width: 1160px;
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 15px 25px;
 }
 
-.nav__menu {
-  display: none;
+@media (width < 1024px) {
+  .nav__menu {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #132d46;
+    padding: 5rem 4rem;
+    transition: .5s;
+  }
+  .nav__close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .nav__link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: .4s;
+    text-transform: uppercase;
+  }
+  .nav__link:hover {
+    color: #01c36d;
+  }
+}
+
+.show-menu {
+  top: 0;
 }
 
 .nav__logo {
@@ -93,7 +125,7 @@ button:hover {
 }
 
 .logo--bold {
-  color: #d83d00;
+  color: #01c36d;
   font-weight: 900;
 }
 
@@ -107,18 +139,9 @@ button:hover {
 
 /*------------ HOME ------------*/
 #home {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(/src/img/home-bg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #132d46;
   text-align: center;
   padding-top: 10rem;
-  border-radius: 0 0 100px 100px;
 }
 
 .home__container {
@@ -152,8 +175,15 @@ button:hover {
 
 /*------------ ABOUT ------------*/
 #about {
-  max-width: 400px;
+  background-color: #01c36d;
+  border-radius: 50px;
 }
+
+.about__container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .about__socials {
   display: flex;
   align-items: center;
@@ -172,13 +202,13 @@ button:hover {
 }
 
 .about__icon i:hover {
-  color: #d83d00;
+  color: #132d46;
 }
 
 /*------------ POPULAR ------------*/
 #popular {
-  background: #2e2e2e;
-  border-radius: 100px;
+  background: #132d46;
+  border-radius: 25px 25px;
 }
 
 .popular__title {
@@ -195,8 +225,8 @@ button:hover {
 
 .popular__card {
   width: 280px;
-  background: #202020;
-  border-radius: 55px;
+  background: #fff;
+  border-radius: 25px;
   box-shadow: 0 15px 15px 0 #131212;
 }
 
@@ -209,19 +239,24 @@ button:hover {
   font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #d83d00;
+  color: #01c36d;
   margin-bottom: 10px;
 }
 
 .data--desc {
   margin: 10px;
-  font-weight: 300;
+  font-weight: 500;
   text-wrap: pretty;
   font-size: 0.9rem;
-  color: #ffffffb7;
+  color: #5a5a5a;
 }
 
 /*------------ TESTAMENTS ------------*/
+#testaments {
+  background-color: #01c36d;
+  border-radius: 50px;
+}
+
 .testaments__container {
   display: flex;
   align-items: center;
@@ -236,11 +271,10 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #d83d00;
+  background-color: #132d46;
   border-radius: 50px;
   padding: 0 0 15px;
   width: 280px;
-  box-shadow: 0 0 15px #d83d0071;
 }
 
 .testaments__div {
@@ -272,7 +306,7 @@ button:hover {
 }
 
 .testaments__info strong {
-  color: #d83d00;
+  color: #01c36d;
   font-size: 14px;
 }
 
@@ -285,7 +319,7 @@ button:hover {
 
 /*------------ QUESTIONS ------------*/
 #questions {
-  background: #2e2e2e;
+  background: #132d46;
   border-radius: 100px;
 }
 
@@ -301,7 +335,7 @@ button:hover {
 }
 
 .questions__card {
-  background: #202020;
+  background: #fff;
   border-radius: 55px;
   padding: 20px;
   width: 280px;
@@ -313,7 +347,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  color: #fff;
+  color: #063b23;
   font-weight: 700;
   font-size: .9rem;
   user-select: none;
@@ -324,7 +358,7 @@ button:hover {
 }
 
 .questions__data--desc {
-  color: #ffffffb7;
+  color: #01c36d;
   font-size: 0.9rem;
   margin: 15px 15px 0;
 }
@@ -334,11 +368,12 @@ button:hover {
   border-radius: 55px;
   margin: 1rem;
   padding: 20px;
-  margin-top: 6rem;
+  margin-top: 2rem;
+  background-color: #132d46;
 }
 
 #footer a {
-  color: #d83d00;
+  color: #01c36d;
 }
 
 #footer a:hover {
@@ -421,7 +456,7 @@ hr {
     justify-content: center;
     gap: 20px;
   }
-  #about {
+  .about__container {
     max-width: 650px;
   }
   .popular__card {
@@ -448,6 +483,12 @@ hr {
 }
 
 @media (width > 1024px) {
+  header {
+    padding: 20px 0;
+  }
+  .nav {
+    padding: 0;
+  }
   .nav__menu {
     display: flex;
   }
@@ -462,9 +503,10 @@ hr {
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
+    transition: .4s;
   }
   .nav__link:hover {
-    text-decoration: underline;
+    color: #01c36d;
   }
   .nav__close {
     display: none;
@@ -481,7 +523,11 @@ hr {
   .home__title {
     font-size: 4rem;
   }
-  #about {
+  .desc--two {
+    margin: 40px 0;
+    color: #d3d3d3;
+  }
+  .about__container {
     max-width: 950px;
   }
   .popular__container {
@@ -500,18 +546,19 @@ hr {
   }
   .card--desktop {
     width: 350px;
-    background: #d83d00;
+    background: #fff;
   }
   .card--desktop h3 {
-    color: #202020;
+    color: #132d46;
+    font-weight: 900;
   }
   .card--desktop button {
-    background: #202020c0;
-    border: 1px solid #202020;
+    background: #132d46;
+    border: 1px solid #132d46;
     transition: .5s;
   }
   .card--desktop p {
-    color: #202020;
+    color: #063b23;
     font-weight: 500;
   }
   .card--desktop button:hover {
